@@ -10,35 +10,35 @@ public class CategoryModel {
     private String name;
     private String create_at;
 
-    public String getId_category() {
+    public String getId_category ( ) {
         return id_category;
     }
 
-    public void setId_category(String id_category) {
+    public void setId_category ( String id_category ) {
         this.id_category = id_category;
     }
 
-    public String getId_store() {
+    public String getId_store ( ) {
         return id_store;
     }
 
-    public void setId_store(String id_store) {
+    public void setId_store ( String id_store ) {
         this.id_store = id_store;
     }
 
-    public String getCreate_at() {
+    public String getCreate_at ( ) {
         return create_at;
     }
 
-    public void setCreate_at(String create_at) {
+    public void setCreate_at ( String create_at ) {
         this.create_at = create_at;
     }
 
-    public String getName() {
+    public String getName ( ) {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName ( String name ) {
         this.name = name;
     }
 }

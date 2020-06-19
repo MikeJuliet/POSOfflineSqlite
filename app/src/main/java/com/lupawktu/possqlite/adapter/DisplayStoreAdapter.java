@@ -19,37 +19,36 @@ import java.util.ArrayList;
  * Created by Mind on 6/2/2017.
  */
 public class DisplayStoreAdapter extends BaseAdapter {
-    private DisplayStore activity;
-    private ArrayList<StoreDetailModel> data;
+    private ArrayList < StoreDetailModel > data;
     private static LayoutInflater inflater = null;
-    public DisplayStoreAdapter(DisplayStore activity, ArrayList<StoreDetailModel> data) {
-        this.activity = activity;
+
+    public DisplayStoreAdapter ( DisplayStore activity, ArrayList < StoreDetailModel > data ) {
         this.data = data;
-        inflater = (LayoutInflater)  activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        inflater = ( LayoutInflater ) activity.getSystemService ( Context.LAYOUT_INFLATER_SERVICE );
     }
 
     @Override
-    public int getCount() {
-        return data.size();
+    public int getCount ( ) {
+        return data.size ( );
     }
 
     @Override
-    public Object getItem(int i) {
+    public Object getItem ( int i ) {
         return i;
     }
 
     @Override
-    public long getItemId(int i) {
+    public long getItemId ( int i ) {
         return i;
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
-        View vView = inflater.inflate(R.layout.item_grid_display_store, null);
-        TextView name = (TextView) vView.findViewById(R.id.name);
-        ImageView image = (ImageView) vView.findViewById(R.id.image);
+    public View getView ( int i, View view, ViewGroup viewGroup ) {
+        View vView = inflater.inflate ( R.layout.item_grid_display_store, null );
+        TextView name = ( TextView ) vView.findViewById ( R.id.name );
+        ImageView image = ( ImageView ) vView.findViewById ( R.id.image );
 
-        name.setText(data.get(i).getName());
+        name.setText ( data.get ( i ).getName ( ) );
         return vView;
     }
 }

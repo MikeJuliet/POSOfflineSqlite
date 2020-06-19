@@ -5,6 +5,7 @@ package com.lupawktu.possqlite.reponse;
  */
 
 public interface ResponseView {
-    void success(ResponseModel model);
-    void failure(ResponseModel model);
+    void success ( ResponseModel model );
+
+    void failure ( ResponseModel model );
 }

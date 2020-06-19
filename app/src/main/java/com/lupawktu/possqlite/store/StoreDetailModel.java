@@ -8,7 +8,7 @@ public class StoreDetailModel {
     private String id_store;
     private String name;
     private String address;
-    private String descripition;
+    private String description;
     private String latitude;
     private String longitude;
     private byte[] image;
@@ -37,12 +37,12 @@ public class StoreDetailModel {
         this.address = address;
     }
 
-    public String getDescripition() {
-        return descripition;
+    public String getDescription () {
+        return description;
     }
 
-    public void setDescripition(String descripition) {
-        this.descripition = descripition;
+    public void setDescription ( String description ) {
+        this.description = description;
     }
 
     public String getLatitude() {

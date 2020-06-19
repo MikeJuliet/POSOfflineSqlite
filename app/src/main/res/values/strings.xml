@@ -11,4 +11,26 @@
     <string name="user">user</string>
     <string name="order">order</string>
     <string name="order_detail">order_detail</string>
+    <string name="choose_category">Choose Category</string>
+    <string name="expandable_down_arrow">Expandable down arrow</string>
+    <string name="product_name">Product Name..</string>
+    <string name="price_buy">Price Buy..</string>
+    <string name="rp">Rp.</string>
+    <string name="price_sell">Price Sell..</string>
+    <string name="quantity_qty">Quantity (qty) ..</string>
+    <string name="product_description">Product Description..</string>
+    <string name="upload_image_product">Upload Image Product :</string>
+    <string name="browse_image">Browse image</string>
+    <string name="selected_image">Selected Image</string>
+    <string name="store_name">Store Name</string>
+    <string name="store_address">Store Address</string>
+    <string name="store_descriptions">Store Descriptions</string>
+    <string name="create_store">Create Store</string>
+    <string name="application_image">Application Image</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="or">-- OR --</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="forget_password">Forget Password ?</string>
 </resources>

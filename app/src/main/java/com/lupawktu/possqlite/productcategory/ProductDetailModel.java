@@ -13,59 +13,59 @@ public class ProductDetailModel {
     private String description;
     private byte[] image;
 
-    public String getId_product() {
+    public String getId_product ( ) {
         return id_product;
     }
 
-    public void setId_product(String id_product) {
+    public void setId_product ( String id_product ) {
         this.id_product = id_product;
     }
 
-    public String getName() {
+    public String getName ( ) {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName ( String name ) {
         this.name = name;
     }
 
-    public double getPrice_buy() {
+    public double getPrice_buy ( ) {
         return price_buy;
     }
 
-    public void setPrice_buy(double price_buy) {
+    public void setPrice_buy ( double price_buy ) {
         this.price_buy = price_buy;
     }
 
-    public double getPrice_sell() {
+    public double getPrice_sell ( ) {
         return price_sell;
     }
 
-    public void setPrice_sell(double price_sell) {
+    public void setPrice_sell ( double price_sell ) {
         this.price_sell = price_sell;
     }
 
-    public int getQty() {
+    public int getQty ( ) {
         return qty;
     }
 
-    public void setQty(int qty) {
+    public void setQty ( int qty ) {
         this.qty = qty;
     }
 
-    public String getDescription() {
+    public String getDescription ( ) {
         return description;
     }
 
-    public void setDescription(String description) {
+    public void setDescription ( String description ) {
         this.description = description;
     }
 
-    public byte[] getImage() {
+    public byte[] getImage ( ) {
         return image;
     }
 
-    public void setImage(byte[] image) {
+    public void setImage ( byte[] image ) {
         this.image = image;
     }
 }

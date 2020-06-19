@@ -8,7 +8,7 @@
         android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_margin="20dp">
             <EditText
@@ -16,9 +16,11 @@
                 android:layout_height="wrap_content"
                 android:background="@android:color/white"
                 android:padding="10dp"
+                android:autofillHints="no"
+                android:inputType="textPersonName"
                 android:textSize="13sp"
-                android:hint="Store Name"
-                android:id="@+id/storename"/>
+                android:hint="@string/store_name"
+                android:id="@+id/storeName"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -32,10 +34,11 @@
                 android:background="@android:color/white"
                 android:padding="10dp"
                 android:textSize="13sp"
-                android:hint="Store Address"
+                android:hint="@string/store_address"
+                android:autofillHints="no"
                 android:lines="5"
                 android:maxLines="7"
-                android:gravity="top|left"
+                android:gravity="top|start"
                 android:id="@+id/address"/>
             <TextView
                 android:layout_width="match_parent"
@@ -49,11 +52,12 @@
                 android:layout_height="wrap_content"
                 android:background="@android:color/white"
                 android:padding="10dp"
+                android:autofillHints="no"
                 android:textSize="13sp"
-                android:hint="Store Descriptions"
+                android:hint="@string/store_descriptions"
                 android:lines="5"
                 android:maxLines="7"
-                android:gravity="top|left"
+                android:gravity="top|start"
                 android:id="@+id/description"/>
             <TextView
                 android:layout_width="match_parent"
@@ -66,7 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="Create Store"
+                android:text="@string/create_store"
                 android:id="@+id/create"/>
         </LinearLayout>
     </ScrollView>

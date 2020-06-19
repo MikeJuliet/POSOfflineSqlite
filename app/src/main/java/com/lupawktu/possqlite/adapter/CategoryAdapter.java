@@ -17,35 +17,34 @@ import java.util.ArrayList;
  * Created by Mind on 6/3/2017.
  */
 public class CategoryAdapter extends BaseAdapter {
-    private Activity activity;
-    private ArrayList<CategoryModel> data;
+    private ArrayList < CategoryModel > data;
     private static LayoutInflater inflater = null;
-    public CategoryAdapter(Activity activity, ArrayList<CategoryModel> data) {
-        this.activity = activity;
+
+    public CategoryAdapter ( Activity activity, ArrayList < CategoryModel > data ) {
         this.data = data;
-        inflater = (LayoutInflater)  activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        inflater = ( LayoutInflater ) activity.getSystemService ( Context.LAYOUT_INFLATER_SERVICE );
     }
 
     @Override
-    public int getCount() {
-        return data.size();
+    public int getCount ( ) {
+        return data.size ( );
     }
 
     @Override
-    public Object getItem(int i) {
+    public Object getItem ( int i ) {
         return i;
     }
 
     @Override
-    public long getItemId(int i) {
+    public long getItemId ( int i ) {
         return i;
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
-        View vView = inflater.inflate(R.layout.item_list_category, null);
-        TextView item = (TextView) vView.findViewById(R.id.item);
-        item.setText(data.get(i).getName());
+    public View getView ( int i, View view, ViewGroup viewGroup ) {
+        View vView = inflater.inflate ( R.layout.item_list_category, null );
+        TextView item = ( TextView ) vView.findViewById ( R.id.item );
+        item.setText ( data.get ( i ).getName ( ) );
         return vView;
     }
 }

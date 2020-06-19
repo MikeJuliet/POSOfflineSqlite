@@ -1,5 +1,7 @@
 package com.lupawktu.possqlite.reponse;
 
+import com.lupawktu.possqlite.productcategory.*;
+
 import java.util.ArrayList;
 
 /**
@@ -7,31 +9,31 @@ import java.util.ArrayList;
  */
 
 public class ResponseModel {
-    private ArrayList<String> data;
+    private ArrayList < String > data;
     private String pesan;
     private int code;
 
-    public String getPesan() {
+    public String getPesan ( ) {
         return pesan;
     }
 
-    public void setPesan(String pesan) {
+    public void setPesan ( String pesan ) {
         this.pesan = pesan;
     }
 
-    public int getCode() {
+    public int getCode ( ) {
         return code;
     }
 
-    public void setCode(int code) {
+    public void setCode ( int code ) {
         this.code = code;
     }
 
-    public ArrayList getData() {
+    public ArrayList < String > getData ( ) {
         return data;
     }
 
-    public void setData(ArrayList data) {
+    public void setData ( ArrayList < CategoryModel > data ) {
         this.data = data;
     }
 }
