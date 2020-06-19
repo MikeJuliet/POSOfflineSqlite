@@ -1,6 +1,7 @@
 package com.lupawktu.possqlite.reponse;
 
 import com.lupawktu.possqlite.productcategory.*;
+import com.lupawktu.possqlite.store.*;
 
 import java.util.ArrayList;
 
@@ -9,7 +10,7 @@ import java.util.ArrayList;
  */
 
 public class ResponseModel {
-    private ArrayList < String > data;
+    private ArrayList < CategoryModel > data;
     private String pesan;
     private int code;
 
@@ -29,7 +30,7 @@ public class ResponseModel {
         this.code = code;
     }
 
-    public ArrayList < String > getData ( ) {
+    public ArrayList < CategoryModel > getData ( ) {
         return data;
     }
 
